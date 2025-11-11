@@ -12,3 +12,8 @@ I build custom software foundations for startup businesses and help them scale.
 - 👫Based in Raleigh, North Carolina, live with my wife and have four sons 👦👦👦👦
 - LinkedIn: https://www.linkedin.com/in/jamesfredley/
 - X: https://x.com/JamesFredley
+
+<br>
+
+| ![James Fredley github stats](https://github-readme-stats.vercel.app/api?username=jamesfredley\&rank_icon=percentile&show_icons=true&theme=tokyonight&show=reviews,reviews,prs_merged&bg_color=fff&title_color=0a1931&icon_color=0a1931&text_color=0A0209&border_color=0A0209&border_radius=8&hide=stars) | ![James Fredley GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jamesfredley&theme=tokyonight&theme=icegray&border_radius=8) |
+| -- | -- |    
