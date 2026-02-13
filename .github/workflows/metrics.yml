@@ -1,0 +1,24 @@
+name: GitHub Metrics
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to commit the SVG
+
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          template: classic
+          theme: tokyonight
+          filename: metrics.svg
+          # token: ${{ secrets.GH_TOKEN }}  # Optional but recommended (see below)
+          base: header, activity, community, repositories, metadata
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_isocalendar: yes  # Adds the contribution calendar if you want
