@@ -29,7 +29,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=jamesfredley&layout=compact&langs_count=12&theme=tokyonight&bg_color=fff&title_color=0a1931&text_color=0A0209&border_color=0A0209&border_radius=8
+          options: username=jamesfredley&layout=compact&langs_count=12&theme=tokyonight&bg_color=fff&include_all_commits=true&count_private=true&title_color=0a1931&text_color=0A0209&border_color=0A0209&border_radius=8
           path: profile/top-langs.svg
           token: ${{ secrets.GH_TOKEN }}
 
