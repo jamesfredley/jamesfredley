@@ -1,23 +1,32 @@
-name: GitHub Metrics
+name: Update GitHub Readme Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
-  workflow_dispatch:
+    - cron: '0 3 * * *'  # Daily at 3 AM UTC
+  workflow_dispatch:    # Manual trigger
 
 jobs:
-  github-metrics:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+      - uses: actions/checkout@v4
+
+      - name: Generate Stats Card
+        uses: readme-tools/github-readme-stats-action@v1
         with:
-          template: classic
-          filename: metrics.svg
-          token: ${{ secrets.GH_TOKEN }}  # Recommended for higher rate limits
-          base: header, activity, community, repositories, metadata
-          plugin_achievements: yes
-          plugin_achievements_display: compact  # Shows compact rank/achievements (similar to percentile)
-          plugin_isocalendar: yes  # Optional: adds contribution calendar
+          card: stats
+          options: username=jamesfredley&rank_icon=percentile&show_icons=true&theme=tokyonight&show=reviews,prs_merged&bg_color=fff&title_color=0a1931&icon_color=0a1931&text_color=0A0209&border_color=0A0209&border_radius=8&hide=stars
+          path: assets/stats.svg
+          token: ${{ secrets.GH_TOKEN }}  # Use your PAT for best results; fallback to ${{ secrets.GITHUB_TOKEN }} for public-only stats
+
+      - name: Commit and Push Card
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/stats.svg
+          git diff --quiet && exit 0  # No commit if no changes
+          git commit -m "Update GitHub stats card"
+          git push
