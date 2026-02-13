@@ -15,5 +15,5 @@ I build custom software foundations for startup businesses and help them scale.
 
 <br>
 
-| ![James Fredley github stats](https://github-readme-stats.vercel.app/api?username=jamesfredley\&rank_icon=percentile&show_icons=true&theme=tokyonight&show=reviews,reviews,prs_merged&bg_color=fff&title_color=0a1931&icon_color=0a1931&text_color=0A0209&border_color=0A0209&border_radius=8&hide=stars) | ![James Fredley GitHub Streak](https://github-readme-stats-fast.vercel.app/api/streak?username=jamesfredley&theme=icegray&border_radius=8) |
+| <img src="./profile/stats.svg" alt="GitHub Stats" /> | <img src="./profile/top-langs.svg" alt="Top Languages" /> |
 | -- | -- |    
