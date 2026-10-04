@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">James Fredley's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Commits  : 25447, Total PRs: 1183, Total PRs Merged: 1068, Total PRs Reviewed: 178, Total Issues: 343, Contributed to (last year): 162</desc>
+        <desc id="descId">Total Commits  : 25461, Total PRs: 1183, Total PRs Merged: 1068, Total PRs Reviewed: 192, Total Issues: 343, Contributed to (last year): 161</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 87.00538533741158;
+        stroke-dashoffset: 87.005385328568;
       }
     }
   
@@ -165,7 +165,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >25.4k</text>
+      >25.5k</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -210,7 +210,7 @@
         x="219.01"
         y="12.5"
         data-testid="reviews"
-      >178</text>
+      >192</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -240,7 +240,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >162</text>
+      >161</text>
     </g>
   </g>
     </svg>
